@@ -1,0 +1,16 @@
+se ruleaza comenzile:
+mkdir container
+sudo apt-get install sqlite3
+sudo apt-get install lsqlite3-dev
+CREATE TABLE difs(
+diff TEXT NOT NULL,
+comm TEXT NOT NULL,
+user TEXT NOT NULL,
+file TEXT NOT NULL);
+
+CREATE TABLE reverts(
+diff TEXT NOT NULL,
+repo TEXT NOT NULL,
+file TEXT NOT NULL,
+versiune INTEGER);
+
